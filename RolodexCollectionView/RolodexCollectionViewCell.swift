@@ -67,17 +67,21 @@ func perspectiveTransform() -> CATransform3D {
     return CATransform3DConcat(rotation, perspective)
 }
 
-@objc public class DraggingHandler {
+@objc public class DraggingHandler: NSObject, UIDynamicAnimatorDelegate {
     let collectionView: UICollectionView
     let dynamicAnimator: UIDynamicAnimator
     
     var currentAttachmentBehavior: UIAttachmentBehavior? = nil
     var currentSnapBehavior: UISnapBehavior? = nil
     var currentGestureRecognizer: UIGestureRecognizer? = nil
+    // This is so that when `dynamicAnimatorDidPause` is called we can intelligently dispose of resources.
+    var gestureRecognizerState: UIGestureRecognizerState? = nil
     
     init(collectionView: UICollectionView) {
         self.collectionView = collectionView
         dynamicAnimator = UIDynamicAnimator(referenceView: collectionView)
+        super.init()
+        dynamicAnimator.delegate = self
     }
     
     public func cellWasDragged(gestureRecognizer: UIGestureRecognizer) {
@@ -88,6 +92,7 @@ func perspectiveTransform() -> CATransform3D {
         }
         
         let location = gestureRecognizer.locationInView(collectionView)
+        gestureRecognizerState = gestureRecognizer.state
         
         switch gestureRecognizer.state {
             case .Began:
@@ -107,19 +112,12 @@ func perspectiveTransform() -> CATransform3D {
             case .Changed:
             currentAttachmentBehavior?.anchorPoint = location
             let panGestureRecognizer = gestureRecognizer as! UIPanGestureRecognizer
-
-            if findDirection(panGestureRecognizer.velocityInView(collectionView)) == .Right {
-                dynamicAnimator.addBehavior(currentSnapBehavior)
-                println(location)
-                println(currentSnapBehavior)
-                dynamicAnimator.removeBehavior(currentAttachmentBehavior)
-            }
+            findDirection(panGestureRecognizer.velocityInView(collectionView))
 
             case .Ended:
-                cleanUpState()
-
+                dynamicAnimator.addBehavior(currentSnapBehavior)
+                dynamicAnimator.removeBehavior(currentAttachmentBehavior)
             case .Cancelled:
-                cleanUpState()
                 gestureRecognizer.enabled = true
             
             default:
@@ -135,10 +133,17 @@ func perspectiveTransform() -> CATransform3D {
     }
     
     private func findDirection(velocity: CGPoint) -> Direction {
+        println(velocity)
         if velocity.x > 0 {
             return .Right
         } else {
             return .Left
+        }
+    }
+    
+    public func dynamicAnimatorDidPause(animator: UIDynamicAnimator) {
+        if gestureRecognizerState == .Ended || gestureRecognizerState == .Cancelled {
+            cleanUpState()
         }
     }
     
