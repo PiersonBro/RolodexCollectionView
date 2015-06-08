@@ -53,7 +53,7 @@ class RolodexCollectionViewCell: UICollectionViewCell {
     }
 }
 
-func perspectiveTransform() -> CATransform3D {
+private func perspectiveTransform() -> CATransform3D {
     let angleOfRotation = CGFloat(M_PI * -40 / 180)
     let rotation = CATransform3DMakeRotation(angleOfRotation, 1.0, 0, 0)
     
