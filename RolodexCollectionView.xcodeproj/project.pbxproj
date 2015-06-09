@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		202BEDC31B2554C000CDC547 /* DraggingHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 202BEDC21B2554C000CDC547 /* DraggingHandler.swift */; };
 		20E736E91B0EB73B00164E02 /* RolodexCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E736E81B0EB73B00164E02 /* RolodexCollectionViewCell.swift */; };
 		20E736EE1B0EB8C700164E02 /* RolodexCollectionViewFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E736ED1B0EB8C700164E02 /* RolodexCollectionViewFlowLayout.swift */; };
 		20E7ADC81AF731FB00BD8385 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E7ADC71AF731FB00BD8385 /* AppDelegate.swift */; };
@@ -17,6 +16,7 @@
 		20E7ADDE1AF731FC00BD8385 /* RolodexCollectionViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E7ADDD1AF731FC00BD8385 /* RolodexCollectionViewTests.swift */; };
 		20E7ADF61AF7372000BD8385 /* Cartography.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20E7ADEF1AF7370700BD8385 /* Cartography.framework */; };
 		20E7ADF71AF7372000BD8385 /* Cartography.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 20E7ADEF1AF7370700BD8385 /* Cartography.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		20F6CB1B1B26A5C200FDCDB1 /* DraggingHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F6CB1A1B26A5C200FDCDB1 /* DraggingHandler.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,7 +79,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		202BEDC21B2554C000CDC547 /* DraggingHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DraggingHandler.swift; path = ../DraggingHandler.swift; sourceTree = "<group>"; };
 		20E736E81B0EB73B00164E02 /* RolodexCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RolodexCollectionViewCell.swift; sourceTree = "<group>"; };
 		20E736ED1B0EB8C700164E02 /* RolodexCollectionViewFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RolodexCollectionViewFlowLayout.swift; sourceTree = "<group>"; };
 		20E7ADC21AF731FB00BD8385 /* RolodexCollectionView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RolodexCollectionView.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -92,6 +91,7 @@
 		20E7ADDC1AF731FC00BD8385 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		20E7ADDD1AF731FC00BD8385 /* RolodexCollectionViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RolodexCollectionViewTests.swift; sourceTree = "<group>"; };
 		20E7ADE71AF7370700BD8385 /* Cartography.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Cartography.xcodeproj; path = RolodexCollectionView/Cartography/Cartography.xcodeproj; sourceTree = "<group>"; };
+		20F6CB1A1B26A5C200FDCDB1 /* DraggingHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DraggingHandler.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,7 +135,7 @@
 		20E7ADC41AF731FB00BD8385 /* RolodexCollectionView */ = {
 			isa = PBXGroup;
 			children = (
-				202BEDC21B2554C000CDC547 /* DraggingHandler.swift */,
+				20F6CB1A1B26A5C200FDCDB1 /* DraggingHandler.swift */,
 				20E7ADC71AF731FB00BD8385 /* AppDelegate.swift */,
 				20E7ADC91AF731FB00BD8385 /* ViewController.swift */,
 				20E736ED1B0EB8C700164E02 /* RolodexCollectionViewFlowLayout.swift */,
@@ -324,8 +324,8 @@
 				20E7ADCA1AF731FB00BD8385 /* ViewController.swift in Sources */,
 				20E736E91B0EB73B00164E02 /* RolodexCollectionViewCell.swift in Sources */,
 				20E736EE1B0EB8C700164E02 /* RolodexCollectionViewFlowLayout.swift in Sources */,
+				20F6CB1B1B26A5C200FDCDB1 /* DraggingHandler.swift in Sources */,
 				20E7ADC81AF731FB00BD8385 /* AppDelegate.swift in Sources */,
-				202BEDC31B2554C000CDC547 /* DraggingHandler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
