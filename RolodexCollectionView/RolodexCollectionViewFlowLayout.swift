@@ -28,9 +28,9 @@ class RolodexCollectionViewFlowLayout: UICollectionViewFlowLayout {
     override func prepareLayout() {
         super.prepareLayout()
         let contentSize = collectionView?.contentSize
-        let items = super.layoutAttributesForElementsInRect(CGRect(origin: CGPoint(x: 0, y: 0), size: contentSize!)) as! [UIDynamicItem]
+        let items = super.layoutAttributesForElementsInRect(CGRect(origin: CGPoint(x: 0, y: 0), size: contentSize!))
         
-        if dynamicAnimator?.behaviors.count == 0 {
+        if let items = items where dynamicAnimator?.behaviors.count == 0 {
             for item in items {
                 let attachmentBehavior = UIAttachmentBehavior(item: item, attachedToAnchor: item.center)
                 // DO STUFF HERE
@@ -43,11 +43,13 @@ class RolodexCollectionViewFlowLayout: UICollectionViewFlowLayout {
         }
     }
     
-    override func layoutAttributesForElementsInRect(rect: CGRect) -> [AnyObject]? {
-        return dynamicAnimator!.itemsInRect(rect)
+    override func layoutAttributesForElementsInRect(rect: CGRect) -> [UICollectionViewLayoutAttributes]? {
+        // FIXME: Using an unsafeBitCast is probably a really stupid ideaTM.
+        let cast = unsafeBitCast(dynamicAnimator!.itemsInRect(rect), [UICollectionViewLayoutAttributes].self)
+        return cast
     }
     
-    override func layoutAttributesForItemAtIndexPath(indexPath: NSIndexPath) -> UICollectionViewLayoutAttributes! {
+    override func layoutAttributesForItemAtIndexPath(indexPath: NSIndexPath) -> UICollectionViewLayoutAttributes? {
         return dynamicAnimator!.layoutAttributesForCellAtIndexPath(indexPath)
     }
 }

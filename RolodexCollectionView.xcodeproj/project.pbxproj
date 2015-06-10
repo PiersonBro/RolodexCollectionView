@@ -14,9 +14,9 @@
 		20E7ADCF1AF731FB00BD8385 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20E7ADCE1AF731FB00BD8385 /* Images.xcassets */; };
 		20E7ADD21AF731FB00BD8385 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 20E7ADD01AF731FB00BD8385 /* LaunchScreen.xib */; };
 		20E7ADDE1AF731FC00BD8385 /* RolodexCollectionViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E7ADDD1AF731FC00BD8385 /* RolodexCollectionViewTests.swift */; };
-		20E7ADF61AF7372000BD8385 /* Cartography.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20E7ADEF1AF7370700BD8385 /* Cartography.framework */; };
-		20E7ADF71AF7372000BD8385 /* Cartography.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 20E7ADEF1AF7370700BD8385 /* Cartography.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		20F6CB1B1B26A5C200FDCDB1 /* DraggingHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F6CB1A1B26A5C200FDCDB1 /* DraggingHandler.swift */; };
+		20F6CB2F1B27A1F800FDCDB1 /* Cartography.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20F6CB281B27A1EF00FDCDB1 /* Cartography.framework */; };
+		20F6CB301B27A1F800FDCDB1 /* Cartography.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 20F6CB281B27A1EF00FDCDB1 /* Cartography.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,37 +27,37 @@
 			remoteGlobalIDString = 20E7ADC11AF731FB00BD8385;
 			remoteInfo = RolodexCollectionView;
 		};
-		20E7ADEE1AF7370700BD8385 /* PBXContainerItemProxy */ = {
+		20F6CB271B27A1EF00FDCDB1 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 20E7ADE71AF7370700BD8385 /* Cartography.xcodeproj */;
+			containerPortal = 20F6CB201B27A1EE00FDCDB1 /* Cartography.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 54C96A11195063CD000CDD27;
 			remoteInfo = "Cartography-iOS";
 		};
-		20E7ADF01AF7370700BD8385 /* PBXContainerItemProxy */ = {
+		20F6CB291B27A1EF00FDCDB1 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 20E7ADE71AF7370700BD8385 /* Cartography.xcodeproj */;
+			containerPortal = 20F6CB201B27A1EE00FDCDB1 /* Cartography.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 54C96A1C195063CD000CDD27;
 			remoteInfo = "Cartography-iOS-Tests";
 		};
-		20E7ADF21AF7370700BD8385 /* PBXContainerItemProxy */ = {
+		20F6CB2B1B27A1EF00FDCDB1 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 20E7ADE71AF7370700BD8385 /* Cartography.xcodeproj */;
+			containerPortal = 20F6CB201B27A1EE00FDCDB1 /* Cartography.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 54F6A838195C20C100313D24;
 			remoteInfo = "Cartography-Mac";
 		};
-		20E7ADF41AF7370700BD8385 /* PBXContainerItemProxy */ = {
+		20F6CB2D1B27A1EF00FDCDB1 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 20E7ADE71AF7370700BD8385 /* Cartography.xcodeproj */;
+			containerPortal = 20F6CB201B27A1EE00FDCDB1 /* Cartography.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 54F6A842195C20C200313D24;
 			remoteInfo = "Cartography-Mac-Tests";
 		};
-		20E7ADF81AF7372000BD8385 /* PBXContainerItemProxy */ = {
+		20F6CB311B27A1F800FDCDB1 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 20E7ADE71AF7370700BD8385 /* Cartography.xcodeproj */;
+			containerPortal = 20F6CB201B27A1EE00FDCDB1 /* Cartography.xcodeproj */;
 			proxyType = 1;
 			remoteGlobalIDString = 54C96A10195063CD000CDD27;
 			remoteInfo = "Cartography-iOS";
@@ -71,7 +71,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				20E7ADF71AF7372000BD8385 /* Cartography.framework in Embed Frameworks */,
+				20F6CB301B27A1F800FDCDB1 /* Cartography.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -90,8 +90,8 @@
 		20E7ADD71AF731FB00BD8385 /* RolodexCollectionViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RolodexCollectionViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		20E7ADDC1AF731FC00BD8385 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		20E7ADDD1AF731FC00BD8385 /* RolodexCollectionViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RolodexCollectionViewTests.swift; sourceTree = "<group>"; };
-		20E7ADE71AF7370700BD8385 /* Cartography.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Cartography.xcodeproj; path = RolodexCollectionView/Cartography/Cartography.xcodeproj; sourceTree = "<group>"; };
 		20F6CB1A1B26A5C200FDCDB1 /* DraggingHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DraggingHandler.swift; sourceTree = "<group>"; };
+		20F6CB201B27A1EE00FDCDB1 /* Cartography.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Cartography.xcodeproj; path = Carthage/Checkouts/Cartography/Cartography.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,7 +99,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				20E7ADF61AF7372000BD8385 /* Cartography.framework in Frameworks */,
+				20F6CB2F1B27A1F800FDCDB1 /* Cartography.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -116,7 +116,7 @@
 		20E7ADB91AF731FB00BD8385 = {
 			isa = PBXGroup;
 			children = (
-				20E7ADE71AF7370700BD8385 /* Cartography.xcodeproj */,
+				20F6CB201B27A1EE00FDCDB1 /* Cartography.xcodeproj */,
 				20E7ADC41AF731FB00BD8385 /* RolodexCollectionView */,
 				20E7ADDA1AF731FB00BD8385 /* RolodexCollectionViewTests */,
 				20E7ADC31AF731FB00BD8385 /* Products */,
@@ -172,13 +172,13 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		20E7ADE81AF7370700BD8385 /* Products */ = {
+		20F6CB211B27A1EE00FDCDB1 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				20E7ADEF1AF7370700BD8385 /* Cartography.framework */,
-				20E7ADF11AF7370700BD8385 /* Cartography-iOS-Tests.xctest */,
-				20E7ADF31AF7370700BD8385 /* Cartography.framework */,
-				20E7ADF51AF7370700BD8385 /* Cartography-Mac-Tests.xctest */,
+				20F6CB281B27A1EF00FDCDB1 /* Cartography.framework */,
+				20F6CB2A1B27A1EF00FDCDB1 /* Cartography-iOS-Tests.xctest */,
+				20F6CB2C1B27A1EF00FDCDB1 /* Cartography.framework */,
+				20F6CB2E1B27A1EF00FDCDB1 /* Cartography-Mac-Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -198,7 +198,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				20E7ADF91AF7372000BD8385 /* PBXTargetDependency */,
+				20F6CB321B27A1F800FDCDB1 /* PBXTargetDependency */,
 			);
 			name = RolodexCollectionView;
 			productName = RolodexCollectionView;
@@ -229,7 +229,8 @@
 		20E7ADBA1AF731FB00BD8385 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0640;
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "Rez Works";
 				TargetAttributes = {
 					20E7ADC11AF731FB00BD8385 = {
@@ -254,8 +255,8 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = 20E7ADE81AF7370700BD8385 /* Products */;
-					ProjectRef = 20E7ADE71AF7370700BD8385 /* Cartography.xcodeproj */;
+					ProductGroup = 20F6CB211B27A1EE00FDCDB1 /* Products */;
+					ProjectRef = 20F6CB201B27A1EE00FDCDB1 /* Cartography.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -267,32 +268,32 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		20E7ADEF1AF7370700BD8385 /* Cartography.framework */ = {
+		20F6CB281B27A1EF00FDCDB1 /* Cartography.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = Cartography.framework;
-			remoteRef = 20E7ADEE1AF7370700BD8385 /* PBXContainerItemProxy */;
+			remoteRef = 20F6CB271B27A1EF00FDCDB1 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		20E7ADF11AF7370700BD8385 /* Cartography-iOS-Tests.xctest */ = {
+		20F6CB2A1B27A1EF00FDCDB1 /* Cartography-iOS-Tests.xctest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
 			path = "Cartography-iOS-Tests.xctest";
-			remoteRef = 20E7ADF01AF7370700BD8385 /* PBXContainerItemProxy */;
+			remoteRef = 20F6CB291B27A1EF00FDCDB1 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		20E7ADF31AF7370700BD8385 /* Cartography.framework */ = {
+		20F6CB2C1B27A1EF00FDCDB1 /* Cartography.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = Cartography.framework;
-			remoteRef = 20E7ADF21AF7370700BD8385 /* PBXContainerItemProxy */;
+			remoteRef = 20F6CB2B1B27A1EF00FDCDB1 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		20E7ADF51AF7370700BD8385 /* Cartography-Mac-Tests.xctest */ = {
+		20F6CB2E1B27A1EF00FDCDB1 /* Cartography-Mac-Tests.xctest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
 			path = "Cartography-Mac-Tests.xctest";
-			remoteRef = 20E7ADF41AF7370700BD8385 /* PBXContainerItemProxy */;
+			remoteRef = 20F6CB2D1B27A1EF00FDCDB1 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -345,10 +346,10 @@
 			target = 20E7ADC11AF731FB00BD8385 /* RolodexCollectionView */;
 			targetProxy = 20E7ADD81AF731FB00BD8385 /* PBXContainerItemProxy */;
 		};
-		20E7ADF91AF7372000BD8385 /* PBXTargetDependency */ = {
+		20F6CB321B27A1F800FDCDB1 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Cartography-iOS";
-			targetProxy = 20E7ADF81AF7372000BD8385 /* PBXContainerItemProxy */;
+			targetProxy = 20F6CB311B27A1F800FDCDB1 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -385,6 +386,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -451,8 +453,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = RolodexCollectionView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "io.RezWorks.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -461,8 +465,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = RolodexCollectionView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "io.RezWorks.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -481,6 +487,7 @@
 				);
 				INFOPLIST_FILE = RolodexCollectionViewTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "io.RezWorks.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RolodexCollectionView.app/RolodexCollectionView";
 			};
@@ -496,6 +503,7 @@
 				);
 				INFOPLIST_FILE = RolodexCollectionViewTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "io.RezWorks.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RolodexCollectionView.app/RolodexCollectionView";
 			};

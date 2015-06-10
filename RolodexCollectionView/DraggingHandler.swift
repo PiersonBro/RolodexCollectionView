@@ -56,8 +56,8 @@ import UIKit
             findDirection(panGestureRecognizer.velocityInView(collectionView))
             
         case .Ended:
-            dynamicAnimator.addBehavior(currentSnapBehavior)
-            dynamicAnimator.removeBehavior(currentAttachmentBehavior)
+            dynamicAnimator.addBehavior(currentSnapBehavior!)
+            dynamicAnimator.removeBehavior(currentAttachmentBehavior!)
         case .Cancelled:
             gestureRecognizer.enabled = true
             
@@ -74,7 +74,7 @@ import UIKit
     }
     
     private func findDirection(velocity: CGPoint) -> Direction {
-        println(velocity)
+        print(velocity)
         if velocity.x > 0 {
             return .Right
         } else {

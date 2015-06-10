@@ -11,7 +11,7 @@ import Cartography
 
 class ViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     var colorViews = [UIView]()
-    let button = UIButton.buttonWithType(.System) as! UIButton
+    let button = UIButton(type: .System)
     var collectionView: UICollectionView?
     static let reuseIdentifier = "com.rolodexCell.rezworks"
     var draggingHandler: DraggingHandler? = nil
